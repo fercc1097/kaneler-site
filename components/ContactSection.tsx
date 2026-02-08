@@ -1,6 +1,6 @@
 import { Mail, Droplet, Building, Zap, Eye } from "lucide-react";
-import { ImageGallery } from "./ImageGallery";
 import { ContactInfo } from "./ContactInfo";
+import { ImageGallery } from "./ImageGallery";
 
 export function ContactSection() {
   return (
