@@ -1,7 +1,6 @@
-import { Mail, MapPin, Phone, Droplet, Building, Zap, Eye } from "lucide-react";
+import { Mail, Droplet, Building, Zap, Eye } from "lucide-react";
+import { ContactInfo } from "./ContactInfo";
 import { ImageGallery } from "./ImageGallery";
-import { ContactForm } from "./ContactForm";
-import { RecaptchaPolicy } from "./RecaptchaPolicy";
 
 export function ContactSection() {
   return (
@@ -15,35 +14,13 @@ export function ContactSection() {
 
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">Envíanos un mensaje</h3>
-              <p className="mb-4">
-                Completa el formulario y nos pondremos en contacto contigo lo
-                antes posible. Estamos aquí para responder a tus preguntas y
-                ayudarte con tus proyectos.
-              </p>
-              <ContactForm />
-              <RecaptchaPolicy />
-            </div>
-
-            <div>
               <h3 className="text-xl font-bold mb-4">
                 Información de contacto
               </h3>
-              <div className="flex items-start mb-4">
-                <MapPin className="w-5 h-5 mr-3 mt-1 flex-shrink-0 text-[#FF7F27]" />
-                <p>
-                  Matamoros #61-A, Col. Centro, Huauchinango, Puebla, C.P. 73170
-                </p>
-              </div>
-              <div className="flex items-center mb-4">
-                <Phone className="w-5 h-5 mr-3 flex-shrink-0 text-[#FF7F27]" />
-                <div>
-                  <p>+52 7767678672</p>
-                  <p>+52 8180507329</p>
-                  <p>+52 7766880892</p>
-                </div>
-              </div>
+              <ContactInfo />
+            </div>
 
+            <div>
               <h3 className="text-xl font-bold mb-4">Nuestros servicios</h3>
               <div className="grid grid-cols-2 gap-4">
                 <div className="p-4 border border-[#FF7F27] text-center">
